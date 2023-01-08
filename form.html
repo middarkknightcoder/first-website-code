@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+
+<body>
+
+    <h1>Here testing the form in html</h1>
+
+    <form action="mailto:ronakkantariya12@gmail.com" method="post" target="_blank" autocomplete="on">
+        <fieldset id="personaldetails">
+            <legend id="personalD">Personal Details</legend>
+            <label for="fname">First Name :</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter your name">
+            <br><br>
+            <label for="lname">Last Name :</label>
+            <input type="text" id="lname" name="lname">
+            <br><br>
+            <label for="email">Enter Your Email :</label>
+            <input type="email" id="E-mail" name="E-mail">
+            <br><br>
+            <label for="gender">Gender :</label>
+            <input type="radio" id="gender" name="gender"> Male
+            <input type="radio" id="gender" name="gender"> Female
+            <br><br>
+            <label for="hobbies">My Hobby :</label>
+            <input type="checkbox" name="hobbies" value="Learning"> Learning
+            <input type="checkbox" name="hobbies" value="Reading"> Reading
+            <input type="checkbox" name="hobbies" value="Codeing" checked> Codeing
+            <br><br>
+            <label for="B-name">Birth date :</label>
+            <input type="date" id="B-name" name="B-date">
+            <br><br>
+            <input type="submit" id="submit" name="submitform">
+            <input type="reset" id="reset" name="resetform">
+        </fieldset>
+        <br><br>
+
+        <fieldset id="Liveing Details">
+            <legend>Liveing Details</legend>
+            <label for="Adress">Adress :</label><br>
+            <textarea name="Address" rows="10" cols="30" placeholder="Pls enter your address here"></textarea>
+        </fieldset>
+        <br><br>
+
+        <fieldset id="proffesionl details">
+            <legend>Proffesion Details</legend>
+            <label for="select manu">Pls choose your profesion</label>
+            <select id="profesion" name="profesion">
+                <!--you can also used here size atribute for the how many  slect the data size="2"-->
+                <optgroup id="developer" label="Developer">
+                    <option value="appdev">Application Developer</option>
+                    <option value="gmdev">Game Developer</option>
+                    <option value="softdev">Softwaer Developer</option>
+                </optgroup>
+                <optgroup id="Data" label="Data Collector">
+                    <option value="Datasci">Data Scintist</option>
+                    <option value="DataAL">Data Analitics</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <label for="Salary">Pls choose your salary :</label>
+            <input list="browser">
+            <datalist id="browser">
+                <option value="50000 to 70000">
+                <option value="70000 to 100000">
+                <option value="100000 to 130000">
+                <option value="130000 to 150000">
+            </datalist>
+            <br><br>
+            <label for="color">Choose your fevorite color</label>
+            <input type="color" id="color" name="color">
+            <br><br>
+            <label for="search">Pls search here</label>
+            <input type="search" name="serching" placeholder="Pls search here">
+            <br><br>
+            <label for="Phone_number">Pls search here</label>
+            <input type="tel" name="Phone_numbr" placeholder="Pls Enter your phone number">
+            <br><br>
+            <label for="document">Upload your Document here :</label>
+            <input type="file" name="document">
+        </fieldset>
+
+
+
+    </form>
+</body>
+
+</html>
